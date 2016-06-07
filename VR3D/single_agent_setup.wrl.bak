@@ -1,0 +1,413 @@
+#VRML V2.0 utf8
+
+Background {
+  skyColor [
+    0.8 0 1,
+    1 0.8 0.8,
+    1 1 0 
+  ]
+  skyAngle [1.39626, 1.51844]
+  groundColor [
+    0 0 0,
+    0.6 0.6 0.6 
+  ]
+  groundAngle 1.5708
+}
+Viewpoint {
+  position 142.107 51.2901 133.229
+  orientation -0.438779 0.893737 0.0933142 0.713049
+}
+DEF Floors Group {
+  children [
+    DEF Start Transform {
+      translation -100 -3 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 1 0.6 0
+            emissiveColor 0 0.6 1
+            diffuseColor 0.4 1 1
+          }
+        }
+        geometry Box {
+          size 100 2 100
+        }
+      }
+    }
+    DEF Finish Transform {
+      translation 100 -3 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 1 0.6 0
+            emissiveColor 0.2 0.8 0
+            diffuseColor 0.2 0.8 0
+          }
+        }
+        geometry Box {
+          size 100 2 100
+        }
+      }
+    }
+    DEF AgentPlatform Transform {
+      translation 0 -3 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 1 0.6 0
+            emissiveColor 1 0.4 0.4
+            diffuseColor 1 0.4 0.4
+          }
+        }
+        geometry Box {
+          size 100 2 100
+        }
+      }
+    }
+  ]
+}
+DEF Bricks Transform {
+  children [
+    DEF B1 Transform {
+      translation -100 10 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 0.4 0.4 0.4
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+    DEF B2 Transform {
+      translation -100 0 11
+      children Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 0.4 0.4 0.4
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+    DEF B3 Transform {
+      translation -100 0 -11
+      children Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 0.4 0.4 0.4
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+    DEF B4 Transform {
+      translation -106 0 11
+      children Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 0.4 0.4 0.4
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+    DEF B5 Transform {
+      translation -106 0 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 0.4 0.4 0.4
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+    DEF B6 Transform {
+      translation -106 0 -11
+      children Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 0.4 0.4 0.4
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+    DEF B7 Transform {
+      translation -112 0 11
+      children Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 0.4 0.4 0.4
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+    DEF B8 Transform {
+      translation -112 0 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 0.4 0.4 0.4
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+    DEF B9 Transform {
+      translation -112 0 -11
+      children Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 0.4 0.4 0.4
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+  ]
+}
+DEF Agents Transform {
+  children DEF A1 Transform {
+    translation 0 35 0
+    children [
+      DEF x_arm Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 0.4 0.4 0.4
+          }
+        }
+        geometry Box {
+          size 15 1.5 1.5
+        }
+      }
+      DEF y_arm Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 0.4 0.4 0.4
+          }
+        }
+        geometry Box {
+          size 1.5 1.5 15
+        }
+      }
+      DEF center Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 1 1 0
+          }
+        }
+        geometry Sphere {
+          radius 2
+        }
+      }
+    ]
+  }
+}
+WorldInfo {
+  title "Single Agent Track"
+  info "This setup is meant for use with a single agent and used to test initial agent control by MATLAB functions
+" 
+}
+DEF Endpoints Transform {
+  children [
+    DEF E1 Transform {
+      translation 100 0 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 1 1 1
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+    DEF E2 Transform {
+      translation 106 0 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 1 1 1
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+    DEF E3 Transform {
+      translation 100 4 0
+      rotation 0 0 0 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 1 1 1
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+    DEF E4 Transform {
+      translation 106 4 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 1 1 1
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+    DEF E5 Transform {
+      translation 100 8 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 1 1 1
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+    DEF E6 Transform {
+      translation 106 8 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 1 1 1
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+    DEF E7 Transform {
+      translation 100 12 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 1 1 1
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+    DEF E8 Transform {
+      translation 106 12 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 1 1 1
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+    DEF E9 Transform {
+      translation 100 16 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.5
+            specularColor 0.8 1 0.8
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 1 1 1
+          }
+        }
+        geometry Box {
+          size 5 4 10
+        }
+      }
+    }
+  ]
+}
+DEF Text Transform {
+  children Text {
+    length 100
+    fontStyle FontStyle {
+      size 10
+    }
+    string "Stuff!" 
+  }
+}
