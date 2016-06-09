@@ -69,7 +69,7 @@ DEF Floors Group {
 DEF Bricks Transform {
   children [
     DEF B1 Transform {
-      translation -100 10 0
+      translation 100 10 0
       children Shape {
         appearance Appearance {
           material Material {
@@ -403,11 +403,15 @@ DEF Endpoints Transform {
   ]
 }
 DEF Text Transform {
+  translation 100 0 50
+  scaleOrientation 0 0 0 0
+  rotation 0 0 0 0
   children Text {
     length 100
     fontStyle FontStyle {
-      size 10
+      size 5
+      family "ARIAL" 
     }
-    string "Stuff!" 
+    string "Final state" 
   }
 }
