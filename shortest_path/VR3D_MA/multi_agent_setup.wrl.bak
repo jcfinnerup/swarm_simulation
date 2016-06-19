@@ -69,7 +69,7 @@ DEF Floors Group {
 DEF Bricks Transform {
   children [
     DEF B1 Transform {
-      translation 100 10 0
+      translation -100 10 0
       children Shape {
         appearance Appearance {
           material Material {
@@ -206,47 +206,212 @@ DEF Bricks Transform {
   ]
 }
 DEF Agents Transform {
-  children DEF A1 Transform {
-    translation 0 35 0
-    children [
-      DEF x_arm Shape {
-        appearance Appearance {
-          material Material {
-            specularColor 0.8 1 0.8
-            emissiveColor 0.4 0.4 0.4
-            diffuseColor 0.4 0.4 0.4
+  children [
+    DEF A1 Transform {
+      children [
+        DEF x_arm Shape {
+          appearance Appearance {
+            material Material {
+              specularColor 0.8 1 0.8
+              emissiveColor 0.4 0.4 0.4
+              diffuseColor 0.4 0.4 0.4
+            }
+          }
+          geometry Box {
+            size 15 1.5 1.5
           }
         }
-        geometry Box {
-          size 15 1.5 1.5
-        }
-      }
-      DEF y_arm Shape {
-        appearance Appearance {
-          material Material {
-            specularColor 0.8 1 0.8
-            emissiveColor 0.4 0.4 0.4
-            diffuseColor 0.4 0.4 0.4
+        DEF y_arm Shape {
+          appearance Appearance {
+            material Material {
+              specularColor 0.8 1 0.8
+              emissiveColor 0.4 0.4 0.4
+              diffuseColor 0.4 0.4 0.4
+            }
+          }
+          geometry Box {
+            size 1.5 1.5 15
           }
         }
-        geometry Box {
-          size 1.5 1.5 15
-        }
-      }
-      DEF center Shape {
-        appearance Appearance {
-          material Material {
-            specularColor 0.8 1 0.8
-            emissiveColor 0.4 0.4 0.4
-            diffuseColor 1 1 0
+        DEF center Shape {
+          appearance Appearance {
+            material Material {
+              specularColor 0.8 1 0.8
+              emissiveColor 0.4 0.4 0.4
+              diffuseColor 1 1 0
+            }
+          }
+          geometry Sphere {
+            radius 2
           }
         }
-        geometry Sphere {
-          radius 2
+      ]
+    }
+    DEF A2 Transform {
+      translation 0 0 -20
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              specularColor 0.8 1 0.8
+              emissiveColor 0.4 0.4 0.4
+              diffuseColor 0.4 0.4 0.4
+            }
+          }
+          geometry Box {
+            size 15 1.5 1.5
+          }
         }
-      }
-    ]
-  }
+        Shape {
+          appearance Appearance {
+            material Material {
+              specularColor 0.8 1 0.8
+              emissiveColor 0.4 0.4 0.4
+              diffuseColor 0.4 0.4 0.4
+            }
+          }
+          geometry Box {
+            size 1.5 1.5 15
+          }
+        }
+        DEF center2 Shape {
+          appearance Appearance {
+            material Material {
+              specularColor 0.8 1 0.8
+              emissiveColor 0.4 0.4 0.4
+              diffuseColor 0.4 1 0
+            }
+          }
+          geometry Sphere {
+            radius 2
+          }
+        }
+      ]
+    }
+    DEF A3 Transform {
+      translation 0 0 20
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              specularColor 0.8 1 0.8
+              emissiveColor 0.4 0.4 0.4
+              diffuseColor 0.4 0.4 0.4
+            }
+          }
+          geometry Box {
+            size 15 1.5 1.5
+          }
+        }
+        Shape {
+          appearance Appearance {
+            material Material {
+              specularColor 0.8 1 0.8
+              emissiveColor 0.4 0.4 0.4
+              diffuseColor 0.4 0.4 0.4
+            }
+          }
+          geometry Box {
+            size 1.5 1.5 15
+          }
+        }
+        DEF cener3 Shape {
+          appearance Appearance {
+            material Material {
+              specularColor 0.8 1 0.8
+              emissiveColor 0.4 0.4 0.4
+              diffuseColor 1 0.2 0.2
+            }
+          }
+          geometry Sphere {
+            radius 2
+          }
+        }
+      ]
+    }
+    DEF A4 Transform {
+      translation -20 0 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              specularColor 0.8 1 0.8
+              emissiveColor 0.4 0.4 0.4
+              diffuseColor 0.4 0.4 0.4
+            }
+          }
+          geometry Box {
+            size 15 1.5 1.5
+          }
+        }
+        Shape {
+          appearance Appearance {
+            material Material {
+              specularColor 0.8 1 0.8
+              emissiveColor 0.4 0.4 0.4
+              diffuseColor 0.4 0.4 0.4
+            }
+          }
+          geometry Box {
+            size 1.5 1.5 15
+          }
+        }
+        DEF center4 Shape {
+          appearance Appearance {
+            material Material {
+              specularColor 0.8 1 0.8
+              emissiveColor 0.4 0.4 0.4
+              diffuseColor 0.2 1 1
+            }
+          }
+          geometry Sphere {
+            radius 2
+          }
+        }
+      ]
+    }
+    DEF A5 Transform {
+      translation 20 0 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              specularColor 0.8 1 0.8
+              emissiveColor 0.4 0.4 0.4
+              diffuseColor 0.4 0.4 0.4
+            }
+          }
+          geometry Box {
+            size 15 1.5 1.5
+          }
+        }
+        Shape {
+          appearance Appearance {
+            material Material {
+              specularColor 0.8 1 0.8
+              emissiveColor 0.4 0.4 0.4
+              diffuseColor 0.4 0.4 0.4
+            }
+          }
+          geometry Box {
+            size 1.5 1.5 15
+          }
+        }
+        DEF center5 Shape {
+          appearance Appearance {
+            material Material {
+              specularColor 0.8 1 0.8
+              emissiveColor 0.4 0.4 0.4
+              diffuseColor 0 0 0.8
+            }
+          }
+          geometry Sphere {
+            radius 2
+          }
+        }
+      ]
+    }
+  ]
 }
 WorldInfo {
   title "Single Agent Track"
